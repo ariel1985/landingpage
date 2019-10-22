@@ -1,3 +1,7 @@
+/* @font-face {
+  font-family: Roboto;
+  src: url('assets/fonts/roboto-thin.ttf');
+} */
 
 /* General */
 * {
@@ -11,7 +15,7 @@ section, main {
 }
 
 /* Cutom Fonts */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto-thin:400,100,300,500,700,900);
 
 
 /* 
@@ -49,6 +53,8 @@ body {
   width: 51%;
 }
 
+.mid-right-desktop-img, .mid-left-desktop-img { display: none; }
+
 .mid-right-img {
   z-index:-1; 
   position: absolute; 
@@ -84,14 +90,12 @@ body {
 .wrap {
   padding: 5.3% 6.4%;
   position: relative;
-  /* height: 3216px; */
 }
 
 .company-name {
-  float: left;
   color: white;
   font-weight: bold;
-  font-size: 31px;
+  font-size: 20px;
 }
 
 img.menu {
@@ -105,7 +109,7 @@ img.menu {
 }
 
 .sign-up-btn {
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: #00a9ff;
   border: 1px solid #00a9ff;
   color: white;
@@ -165,7 +169,8 @@ ul.carousel-btn {
     height: 20px;
 }
 
-.carousel-btn li {
+/*.carousel-btn li {*/
+  .carousel-item {
     display: list-item;
     float: left;
     color: white;
@@ -178,7 +183,7 @@ ul.carousel-btn {
     font-size: 40px;
 }
 
-.carousel-btn li:nth-child(5) {
+.active {
   list-style-type: disc;
   list-style: disc;
 }
@@ -225,6 +230,10 @@ ul.carousel-btn {
   height: 20px;
   background-color: #00a9ff;
   margin: 3% auto;
+}
+
+.hidden-circle {
+  display: none;
 }
 
 .sct-qmark {
@@ -370,4 +379,8 @@ ul.carousel-btn {
   text-align: center;
   color: white;
   font-size: 14px;
+}
+
+#black-footer {
+  display: none;
 }
